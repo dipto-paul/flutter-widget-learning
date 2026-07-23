@@ -17,14 +17,23 @@ class HomeScreen extends StatelessWidget{
           children: [
             Container(
               height: 200,
-              width: 200,
+              width: double.infinity,
               color: Colors.green,
+
             ),
             Positioned(
-                child: CircleAvatar(
-                  radius: 50,
-                  backgroundColor: Colors.red,
-                )
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(50),
+                child: Container(
+                  foregroundDecoration: BoxDecoration(
+                    image: DecorationImage(image: NetworkImage("https://st4.depositphotos.com/1017228/20282/i/450/depositphotos_202829902-stock-photo-close-portrait-smiling-young-man.jpg"),
+                    //fit:BoxFit.cover,
+                    ),
+
+                  ),
+                ),
+
+              ),
             ),
           ],
         ),
