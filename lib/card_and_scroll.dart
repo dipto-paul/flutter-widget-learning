@@ -45,7 +45,8 @@ class _CardAndScrollState extends State<CardAndScroll> {
 
           SizedBox(height: 20,),
 
-          Flexible(
+          Expanded( // joto tuku baki thakbe tototuku nibe
+            flex: 1,
             child: GridView.count(
                 crossAxisCount: 3,
               childAspectRatio: 1.0,
@@ -56,10 +57,21 @@ class _CardAndScrollState extends State<CardAndScroll> {
                 Container(height: 100,width:100, color:Colors.green,),
                 Container(height: 100,width:100, color:Colors.amber,),
                 Container(height: 100,width:100, color:Colors.pink,),
-                Container(height: 100,width:100, color:Colors.purple,),
               ],
             )
           ),
+          SizedBox(height: 10),
+          Flexible( // jototuku jayga lagbe tototukui nibe
+            flex:1,
+              child: GridView.count(
+                crossAxisCount: 3,childAspectRatio: 1.0,
+                children: [
+                  Container(height: 100,width:100, color:Colors.red,),
+                  Container(height: 100,width:100, color:Colors.blueAccent,),
+                  Container(height: 100,width:100, color:Colors.orange,),
+                ],
+              )
+          )
 
         ],
 
