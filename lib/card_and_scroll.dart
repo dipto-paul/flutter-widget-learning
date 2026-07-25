@@ -43,8 +43,28 @@ class _CardAndScrollState extends State<CardAndScroll> {
             ),
           ),
 
+          SizedBox(height: 20,),
+
+          Flexible(
+            child: GridView.count(
+                crossAxisCount: 3,
+              childAspectRatio: 1.0,
+              children: [
+                Container(height: 100,width:100, color:Colors.red,),
+                Container(height: 100,width:100, color:Colors.blueAccent,),
+                Container(height: 100,width:100, color:Colors.orange,),
+                Container(height: 100,width:100, color:Colors.green,),
+                Container(height: 100,width:100, color:Colors.amber,),
+                Container(height: 100,width:100, color:Colors.pink,),
+                Container(height: 100,width:100, color:Colors.purple,),
+              ],
+            )
+          ),
+
         ],
+
       ),
+
     );
   }
 }
