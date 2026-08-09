@@ -75,9 +75,12 @@ class _CardAndScrollState extends State<CardAndScroll> {
               )
           ),
 
+          LinearProgressIndicator(
+            color: Colors.redAccent,
+            backgroundColor: Colors.grey,
 
-
-
+          ),
+        SizedBox(height: 20,),
           CircularProgressIndicator(
             color: Colors.orange,
             backgroundColor: Colors.grey,
