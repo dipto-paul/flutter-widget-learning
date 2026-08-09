@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CardAndScroll extends StatefulWidget {
+  const CardAndScroll({super.key});
+
   @override
   State<CardAndScroll> createState() => _CardAndScrollState();
 }
