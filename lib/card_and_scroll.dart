@@ -73,7 +73,17 @@ class _CardAndScrollState extends State<CardAndScroll> {
                   Container(height: 100,width:100, color:Colors.orange,),
                 ],
               )
-          )
+          ),
+
+
+
+
+          CircularProgressIndicator(
+            color: Colors.orange,
+            backgroundColor: Colors.grey,
+            strokeWidth: 7,
+          ),
+
 
         ],
 
